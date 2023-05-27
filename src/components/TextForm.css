@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.container1{
+    background: #0B0C10;
+    height: 80vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#Mytextarea{
+    font-family: 'Roboto', sans-serif !important;
+    height: 30vh;
+    width: 35vw;
+    color: #C5C6C7;
+    background: #1F2833;
+}
+#Mytextarea:hover{
+    background-color: #31373e;
+}
+.text-area-container-sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.b-container{
+    gap: 10px;
+    display: flex;
+}
+#clipboard{
+    color: #C5C6C7;
+}
+.wc-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+.text-area-container{
+    height: auto;
+}
+h1{
+    color: #66FCF1;
+}
+.w h3{
+    color: #66FCF1;
+}
+.c h3{
+    color: #66FCF1;
+}
+.bi-x-octagon-fill{
+    color: #C5C6C7;
+}
+.w p,.c p{
+    color: #C5C6C7;
+}
+.Button{
+    border: 1px solid #C5C6C7;
+    padding: 10px 20px;
+    background: #66FCF1;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+}
+.br-container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.icon-container{
+    display: flex;
+    gap: 10px;
+}
+.icon-container i{
+    cursor: pointer;
+}
+
+@media (max-width :820px){
+    .container1{
+        gap: 0px;
+        height: 70vh !important;
+    }
+    #Mytextarea{
+        width: 100%;
+    }
+    .text-area-container{
+        width: 100%;
+        margin: 0 60px;
+    }
+    .br-container{
+        width: 100%;
+        margin: 0 60px;
+    }
+}
+@media (max-width :1024px){
+    .container1{
+        gap: 0px;
+        height: 60vh;
+    }
+    #Mytextarea{
+        width: 100%;
+    }
+    .text-area-container{
+        width: 100%;
+        margin: 0 60px;
+    }
+    .br-container{
+        width: 100%;
+        margin: 0 60px;
+    }
+}
+@media (max-width: 450px){
+    .container1 {
+        gap: 0px;
+        height: 75vh !important;
+    }
+    .text-area-container {
+        width: 100%;
+        margin: 0 60px;
+    }
+    .text-area-container-sub {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1 {
+        color: #66FCF1;
+    }
+    .icon-container {
+        display: flex;
+        gap: 10px;
+    }
+    .b-container {
+        gap: 5px;
+        display: flex;
+    }
+    .br-container {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+    .wc-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+    }
+    .Button{
+        font-size: 17px;
+    }
+    .w h3,.c h3{
+        font-size: 25px;
+    }
+}

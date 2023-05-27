@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+}
+html, body{
+  width: 100%;
+  height: auto !important;
+}
+::-webkit-scrollbar-track {
+  background: #00ab9e;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00ab9e; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00ab9e; 
+}

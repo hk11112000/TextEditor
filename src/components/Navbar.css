@@ -1,0 +1,170 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #1F2833;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 50px;
+    box-shadow: 0 0px 10px 0 #C5C6C7;
+}
+.container .logo {
+    font-size: 30px;
+    color: #66FCF1;
+    cursor: pointer;
+}
+.hamburger-menu {
+    position: fixed;
+    /* border: 1px solid #66FCF1; */
+    top: 100px;
+    width: 15%;
+    text-align: center;
+    z-index: 100;
+    color: #000;
+    background: #1F2833;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    right: 0;
+    padding: 20px;
+    overflow: hidden;
+    animation: topToBottom 0.1s ease-in ;
+
+}
+.Navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.Navbar ul li{
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.Navbar ul li i{
+    color: #66FCF1;
+}
+.Navbar ul li a{
+    text-decoration: none;
+    color: #C5C6C7;
+}
+/* .Navbar ul li p{
+    content: "";
+    position: relative;
+    bottom: 0;
+    height: 1px;
+    width: 65px;
+    background: #66FCF1;
+    opacity: 0;
+}
+.Navbar ul li p:hover{
+    opacity: 1;
+} */
+.Navbar button a{
+    text-decoration: none;
+    color: #66FCF1;
+    background-color: #1F2833;
+    padding: 10px 20px;
+    border: 2px solid #66FCF1;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.Navbar button {
+    border: 0px !important;
+    transition: all 0.3s ease-in-out;
+}
+.Navbar button:hover{
+    box-shadow: 0 0px 50px #66FCF1;   
+}
+.bi-list{
+    color: #66FCF1;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.bi-x-circle{
+    color: #66FCF1;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media (max-width: 980px) {
+    .Navbar ul{
+        display: none;
+    }
+    .bi-list{
+        display: block;
+    }
+    .Navbar button {
+        display: none;
+    }
+}
+@media (max-width: 280px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background: #1F2833;
+        width: 100%;
+        padding: 20px;
+    }
+    .container .logo {
+        font-size: 16px !important;
+        color: #66FCF1;
+        cursor: pointer;
+    }
+    .hamburger-menu{
+        width: 22% !important;
+    }
+}
+@media (max-width: 450px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background: #1F2833;
+        width: 100%;
+        padding: 30px;
+    }
+    .container .logo {
+        font-size: 20px;
+        color: #66FCF1;
+        cursor: pointer;
+    }
+    .hamburger-menu{
+        width: 20% !important;
+    }
+    
+}
+@media (max-width: 950px){
+    .hamburger-menu{
+        width: 12%;
+    }
+}
+@media (max-width: 804px){
+    .hamburger-menu{
+        width: 15%;
+    }
+}
+
+@keyframes topToBottom{
+    0%{opacity: 0;
+    }
+    100%{opacity: 1;
+    }
+}
+
